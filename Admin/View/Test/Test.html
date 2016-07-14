@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.js"></script>
+
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<span></span>
+<script type="text/javascript">
+	$(function(){
+		$('#btn').on('click',function(){
+			$.post("__CONTROLLER__/test23",'',function(data){
+				console.log(data);
+
+			},"json");
+		});
+	});
+</script>
+</body>
+</html>
